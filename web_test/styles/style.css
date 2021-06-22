@@ -1,0 +1,42 @@
+/* p{
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+}
+p,li,h1{
+    color: red;
+} */
+html{
+    font-size: 10px;
+    font-family: 'Open Sans',sans-serif;
+    background-color: #00539F;
+}
+h1{
+    margin: 0;
+    /* 页边 */
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+p,li{
+    font-size: 16px;
+    /* line-height后而可以跟不同的参数，如果是数字，是就当前字体乘以数字 */
+    line-height: 2;
+    letter-spacing: 1px;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  /* 第一个值上方和下方，第二个值为左边和右边 */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  /* 内边距的设置 */
+  border: 5px solid black;
+}
+img {
+  display: block;
+  /* 显示：块 */
+  margin: 0 auto;
+}
