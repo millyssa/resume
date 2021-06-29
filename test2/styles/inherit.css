@@ -1,0 +1,12 @@
+.main {
+    color: rebeccapurple;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+/*
+margins, padding, 和 borders 不会被继承
+*/
+.special {
+    color: black;
+    font-weight: bold;
+}
