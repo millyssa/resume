@@ -1,0 +1,11 @@
+.box {
+  inline-size: 200px;
+  writing-mode: horizontal-tb;
+}
+
+img{
+  float: inline-start;
+  margin-inline-end: 10px;
+  margin-block-end: 10px;
+}
+    
