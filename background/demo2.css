@@ -1,0 +1,13 @@
+.a {
+    /* background-image: url(050.jpg); */
+    background-color:rebeccapurple;
+    width: 500px;
+    height: 300px;
+}
+
+.b {
+  background-image: url(star.png);
+  width: 500px;
+  height: 300px;
+}
+    
