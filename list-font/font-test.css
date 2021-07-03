@@ -1,10 +1,3 @@
-/* General setup */
-
-html {
-  font-size: 10px;
-  margin: 0;
-  font-family: sans-serif;
-}
 @font-face {
     font-family: 'source-sans-pro';
     src: url('font/SourceSansPro-Bold.otf') format('otf'),
@@ -20,6 +13,14 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+/* General setup */
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
 
 
 body {
@@ -38,8 +39,15 @@ h2 {
   font-size: 2.4rem;
 }
 
+h1,h2 {
+  font-family: 'zantrokeregular', serif;
+  letter-spacing: 0.2rem;
+}
+
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
-  word-spacing: 0.6rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.3rem;
+  font-family: 'ciclefina', sans-serif;
 }
