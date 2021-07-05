@@ -1,0 +1,33 @@
+* {box-sizing: border-box;}
+
+.wrapper {
+  background-color: rgb(79,185,227);
+  padding: 10px;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .item {
+  float: left;
+  border-radius: 5px;
+  background-color: rgb(207,232,220);
+  padd* {box-sizing: border-box;}
+
+.wrapper {
+  background-color: rgb(79,185,227);
+  padding: 10px;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+  float: left;
+  border-radius: 5px;
+  background-color: rgb(207,232,220);
+  padding: 1em;
+  width: 33.333%;
+}
+ing: 1em;
+} */
