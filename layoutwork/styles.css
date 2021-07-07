@@ -39,7 +39,7 @@ body {
     padding: .5em;
     display: flex;
     flex: 100px;
-    /*position:sticky*/
+    
   }
   
   nav ul {
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-flow: row wrap; 
     align-items: center; 
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   nav a {
@@ -75,6 +75,8 @@ body {
     column-gap: 10px;
    
   }
+  .photos img {
+      margin-top: 10px;
 
   .feature {
       width: 200px;
