@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>媒体查询之浏览器</title>
+    <style>
+        #div0 {
+            width: 100px;
+            height: 500px;
+        }
+        #div0 div{
+            float: left;
+            height:100px ;
+        }
+        /*一行显示三个div*/
+        @media screen and (min-device-width:400px)  {
+             #div0 div {
+                width: 33.3%;
+            }
+            /*第一个孩子*/
+            #div0 div:nth-child(1){
+                background-color: red;
+            }
+             #div0 div:nth-child(2){
+                background-color:blue;
+            }
+             #div0 div:nth-child(3){
+                background-color: green
+            }
+        }
+        /*一行显示两个div*/
+        @media screen and (min-device-width:300px)and (max-device-width:399px) {
+           #div0 div {
+                width: 50%;
+            }
+            /*第一个孩子*/
+            #div0 div:nth-child(1){
+                background-color: red;
+            }
+             #div0 div:nth-child(2){
+                background-color:blue;
+            }
+             #div0 div:nth-child(3){
+                background-color: green
+            }
+        }
+        /*一行显示一个div*/
+        @media screen and (min-device-width:200px)and (max-device-width:299px) {
+           #div0 div {
+                width: 100%;
+            }
+            /*第一个孩子*/
+            #div0 div:nth-child(1){
+                background-color: red;
+            }
+             #div0 div:nth-child(2){
+                background-color:blue;
+            }
+             #div0 div:nth-child(3){
+                background-color: green
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="div0">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
