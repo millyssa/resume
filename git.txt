@@ -1,0 +1,50 @@
+初始化仓库git init
+添加文件（已修改）
+git add：添加到暂存区
+
+
+本地提交操作
+git init(初始化本地仓库) -> git add（添加暂存区） ->git status（status 查看工作目录与暂存区文件状态） ->git commit -m(提交到仓库添加备注) ->git log(查看提交信息)->git ls-files(查看本地工作区列表)
+
+修改文件操作
+git add ->git commit -m 
+如果没有经过暂存区可以通过
+git diff HEAD --文件名(查看变动内容)
+
+暂存区撤销
+git restore --staged 文件名
+取消上一次的操作：git reset HEAD 文件名
+
+版本回退
+git log --pretty=oneline(查看提交信息在一行显示) -> git reset --hard HEAD^（回退到上一个版本）、git reset --hard HEAD~2(回退到2个次数版本)
+、git reset --hard 唯一标识（回退到指定版本）
+git reflog（查看所有操作）
+
+文件删除
+现在工作区删除 ->删除仓库文件git rm git文件名
+
+下载远程仓库文件
+git clone
+
+推送到远程仓库
+git remote add origin 仓库地址 ->git push -u origin 分支
+直接新建推送远程仓库
+1.git add ->git commit -m ->git push
+如果我在GitHub直接改了，那就先git pull再进行以上操作
+
+分支操作
+git branch(查看分支) -> git checkout -b left01（创建分支）->cat 文件（查看文件内容） ->git checkout 分支（切换分支）->git branch -m left01 dev(重命名分支为dev)->git merge dev(合并分支) ->git branch -d dev(删除分支)
+
+
+远程分支操作
+git branch（查看本地加远程分支）->git push origin branch_name(推送本地分支到远程) ->git push origin :branch_name(删除)
+实际操作
+git branch->git add . ->git commit -m '远程分支操作'->git push origin dev(推送本地分支到远程分支)
+
+获取远程分支
+git fetch（获取远程分支状态）->git checkout -b dev origin/dev(dev为分支名，创建本地的分支名和远程的分支名，就可以拉取远程的分支并且在本地创建这个分支)
+
+
+
+
+
