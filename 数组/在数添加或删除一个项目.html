@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在数组末尾添加或删除一个项目</title>
+</head>
+
+<body>
+    <script>
+        let myArray = ['Manchester', 'London', 'Liverpool', 'Birmingham', 'Leeds', 'Carlisle'];
+        //push()的使用添加一个或多个，作用于末尾
+        myArray.push('Cardiff');
+        myArray;
+        myArray.push('Bradford', 'Brighton');
+        myArray;
+        var newLength = myArray.push('Bristol');
+        myArray;
+        newLength;
+        console.log(newLength);
+        console.log(myArray);
+        //数组中删除最后一个元素直接使用pop()，作用于末尾
+        myArray.pop();
+        let removedItem = myArray.pop();
+        console.log(myArray);
+
+        //unshift()类似于push()，作用于结尾
+        myArray.unshift('Edinburgh');
+
+        console.log(myArray);
+        //shift()类似于pop()
+        // let removedItem = myArray.shift();
+        // console.log(myArray);
+        // console.log(removedItem);
+
+
+
+    </script>
+</body>
+
+</html>
