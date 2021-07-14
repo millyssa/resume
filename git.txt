@@ -44,7 +44,12 @@ git branch->git add . ->git commit -m '远程分支操作'->git push origin dev(
 获取远程分支
 git fetch（获取远程分支状态）->git checkout -b dev origin/dev(dev为分支名，创建本地的分支名和远程的分支名，就可以拉取远程的分支并且在本地创建这个分支)
 
+合并分支（本地冲突）
+git merge +文件名
+（多人协同冲突解决）
+先git pull 再合并文件
 
+解决的方法每次都要先pull
 
 
 
