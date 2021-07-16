@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //arguments的使用 只用函数才有 这个对象 而且每个韩式都内置好了这个 arguments
+        //arguments内置对象存储了所有的实参
+        //arguments是伪数组 并不是真正意义的数组
+        function fun() {
+            console.log(arguments);
+            console.log(arguments.length);
+            console.log(arguments[1]);
+            for (let i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+        fun(1, 2, 3);
+        //利用函数求任意个数的最大值
+        function getmax() {
+            var max = arguments[0];
+            for (let i = 1; i < arguments.length; i++)
+                if (arguments[i] > max) {
+                    max = arguments[1]
+                }
+            return max;
+
+        }
+        console.log(getmax(1, 2, 3));
+    </script>
+</body>
+
+</html>
