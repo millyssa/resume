@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas class="myCanvas">
+        <p>Add suitable fallback here.</p>
+    </canvas>
+
+    <script>
+
+        const canvas = document.querySelector('.myCanvas');
+        const width = canvas.width = window.innerWidth;
+        const height = canvas.height = window.innerHeight;
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'rgb(0,0,0)';
+        ctx.fillRect(0, 0, width, height);
+        //这里使用 Image() 构造器创建 HTMLImageElement对象
+        //返回对象的类型与非空 <img> 元素的引用是一致的
+        var image = new Image();
+        image.src = '0.jpg';
+
+        //这次我们尝试用 drawImage() 函数来嵌入图片，应确保图片先载入完毕，否则运行会出错。
+        image.onload = function () {
+            ctx.drawImage(image, 50, 50);
+        }
+
+    </script>
+</body>
+
+</html>
