@@ -21,10 +21,10 @@ const panels = document.querySelectorAll(".panel");
 panels.forEach((item) => {
     item.addEventListener("click", () => {
         panels.forEach((item) => {
-            panels.classList.remove("active");
+           item.classList.remove("active");
 
         })
-        panels.classList.add("active");
+        item.classList.add("active");
     });
 });
 
