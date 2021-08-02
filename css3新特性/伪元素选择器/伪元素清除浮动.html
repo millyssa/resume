@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            /* 插入的元素必须是块级元素  */
+            display: block;
+            height: 0;
+            /* 核心代码清除浮动 */
+            clear: both;
+            visibility: hidden;
+        }
+
+        /* 双伪元素清除浮动 */
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            /* 转换为块级元素并且在一行显示 */
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
