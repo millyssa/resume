@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            perspective: 200px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 100px auto;
+            transition: all 1s;
+
+        }
+
+        img:hover {
+            /* 正值往后面倒 xyz轴都遵从 左手准则 */
+            /* transform: rotateX(360deg); */
+            transform: rotate3d(1, 1, 0, 45deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="img.webp"></div>
+</body>
+
+</html>
