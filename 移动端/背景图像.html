@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid pink;
+            background: url(cm.png) no-repeat;
+            /* background-size:图片宽度 图片高度 ; */
+            /*1.  只写一个参数 肯定是宽度 高度省略了 高度会等比例缩放 */
+            /* background-size: 300px; */
+            /*2.里面的单位可以跟% */
+            background-size: 50%;
+            /* 3.覆盖 cover 要完全覆盖盒子 可能有部分背景图片显示不全 */
+            /* background-size: cover; */
+            /* 4.contain 高度和宽度等比例拉伸 宽度或者 高度 铺满盒子 不再进行拉伸 可能有部分空白区域 */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
