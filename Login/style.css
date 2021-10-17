@@ -27,7 +27,7 @@
   display: inline-block;
   width: 500px;
   height: 100%;
-  background: url(./IMG_4642_1.jpg) no-repeat center;
+  background: url(./IMG_4642_1.jpg) no-repeat;
   background-size: cover;
   border-radius: 20px 0 0 20px;
 }
@@ -69,7 +69,7 @@
   font-size: 18px;
 }
 
-@media screen and(max-width:900px) {
+@media screen and (max-device-width: 900px) {
   .login-content {
     margin: 0 30px;
   }
@@ -77,22 +77,35 @@
     border-radius: 20px;
   }
   .login-box {
-    background-color: rgba(253, 255, 127, 0.5);
+    background-color: rgba(253, 255, 127, 0.479);
   }
 }
-@media screen and(max-width:600px) {
+@media screen and (max-width: 600px) {
   .content {
     background: url(./IMG_4642_1.jpg) no-repeat center;
   }
   .login-content {
-    background-color: rgba(225, 228, 59, 0);
+    background-color: rgba(253, 255, 127, 0);
   }
   .banner-box {
     display: none;
   }
   .login-box {
+    /* 初始定位以HTML文档为父元素 */
     position: initial;
     margin: -40px auto;
-    background-color: rgba(198, 201, 34, 0.5);
+    background-color: rgba(253, 255, 127, 0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .login-content {
+    margin: 0 30px;
+  }
+  .banner-box {
+    border-radius: 20px;
+  }
+  .login-box {
+    background-color: rgba(253, 255, 127, 0.479);
   }
 }
