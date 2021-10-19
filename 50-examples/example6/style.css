@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #efedd6;
+  font-family: "sans-serif";
+  display: flex;
+  flex-direction: column;
+  /* 设置侧轴元素的排列方式 */
+  align-items: center;
+}
+h1 {
+  margin: 10px;
+}
+.box {
+  background-color: aqua;
+  color: azure;
+  width: 400px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  /* 过渡效果 */
+  transform: translateX(400%);
+  /* 转换 */
+  transition: transform 0.4s ease-in-out;
+}
+/* 选择兄弟元素的偶数元素 */
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
