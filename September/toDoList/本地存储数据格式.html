@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var todolist = [{
+            title: "我今天要吃八个馒头",
+            done: false
+        }, {
+            title: "我今天学习jQuery",
+            done: false
+        },];
+        localStorage.setItem("todo", todolist);
+        //1.本地存储里面只能存储字符串的数据格式 
+        //把我们的数组对象转换为字符串格式JSON.stringify()
+        localStorage.setItem("todo", JSON.stringify(todolist));
+        var date = localStorage.getItem("todo");
+        console.log(typeof date);
+        //console.log(date[0].title);//undefined 因为取到的是字符串格式，所以不能取到对象的属性值
+        //2.获取本地存储数据 我们需要把里面的字符串数据转换为 对象格式 JSON.parse()
+        date = JSON.parse(date);
+        console.log(date[0]);
+    </script>
+</body>
+
+</html>
