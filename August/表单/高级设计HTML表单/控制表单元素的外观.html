@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制表单元素的外观</title>
+    <style>
+        input[type=search] {
+            border: 1px dotted #999;
+            border-radius: 0;
+            /*这个属性是非标准的，不应该使用*/
+            -webkit-appearance: none;
+        }
+
+        span {
+            display: inline-block;
+            background: red;
+        }
+
+        input[type=checkbox] {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <!-- 搜索框是难以设置样式的，提供了一个基于webkit浏览器更高级的HTML部件定制，实现了样式
+            web技术难以预测，可完全设置表单元素的问题还远未结束 -->
+        <input type="search">
+        <!-- 复选框或单选按钮的样式是难以设计滴，在不同的浏览器有着不同的反应，在修改复选框和单选按钮的大小时，并不保证确实能改变它们。 -->
+        <span><input type="checkbox"></span>
+    </form>
+</body>
+
+</html>

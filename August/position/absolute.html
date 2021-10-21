@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        /* 祖先没有定位或没有祖先，则以浏览器为准定位 */
+        .son {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            background-color: blueviolet;
+        }
+
+        /* 祖先有定位，则以最近一级的有定位的祖先元素为参考点定位 */
+        .father {
+
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+
+        /* 绝对定位脱标的，不保留，不占有原先位置 */
+        .yeye {
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yeye">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
