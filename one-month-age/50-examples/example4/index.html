@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Hidden search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* 设置渐变颜色 */
+            background-image: linear-gradient(to right, #7d5fff, #7158e2);
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .search {
+            position: relative;
+            height: 50px;
+
+        }
+
+        .search input {
+            background-color: #fff;
+            border: 0;
+            font-size: 18px;
+            height: 50px;
+            width: 50px;
+            transition: width 0.3s ease;
+        }
+
+        .btn {
+            background-color: #fff;
+            border: 0;
+            cursor: pointer;
+            padding: 15px;
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 24px;
+        }
+
+        .btn:focus,
+        input:focus {
+            outline: 0;
+        }
+
+        .search.active input {
+            width: 200px;
+        }
+
+        .search.active button {
+            transform: translateX(198px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search">
+        <input type="text" class="input" placeholder="Search..." autofocus="true">
+        <button class="btn">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <script>
+        const search = document.querySelector(".search");
+        const btn = document.querySelector(".btn");
+        const input = document.querySelector(".input");
+
+        btn.addEventListener("click", () => {
+            // 如果没有就添加active，有就删除
+            search.classList.toggle("active");
+
+        })
+
+
+    </script>
+</body>
+
+
+</html>
