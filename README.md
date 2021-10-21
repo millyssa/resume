@@ -1,2 +1,2 @@
 # resume
-This is a resume 
+学习前端记录
