@@ -1,0 +1,8 @@
+.box {
+  background:   
+    linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat,
+url(star.png) center no-repeat, 
+    rebeccapurple;
+    width: 500px;
+    height: 300px;
+}

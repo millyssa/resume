@@ -1,0 +1,16 @@
+.one {
+  background-color: hsla(188, 97%, 28%, .3);
+}
+
+.two {
+  background-color: hsla(321, 47%, 57%, .7);
+}
+
+.three {
+  background-color: hsla(174, 77%, 31%, .9);
+}
+    
+.wrapper{
+    background-image: url(../090.jpg);
+    background-repeat: no-repeat;
+}

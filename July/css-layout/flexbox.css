@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    
+}
+
+.wrapper > div {
+    flex: 1;
+}
+
+.box1,.box2,.box3{
+    border-radius:2px;
+    
+    background-color: aquamarine;
+
+}

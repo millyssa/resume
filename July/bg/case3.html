@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五彩导航</title>
+</head>
+<style>
+    /*链接属于行内元素，需要模式转换*/
+    /* 文字需要水平垂直居中 */
+    /* 链接需要设置背景图片 */
+    /* 鼠标经过变化背景图片需要链接伪类选择器 */
+    a {
+        display: inline-block;
+        width: 120px;
+        height: 58px;
+        background-color: pink;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        line-height: 58px;
+    }
+
+    .nav .bg1 {
+        background-image: url(images/bg01.png);
+    }
+
+    .nav .bg1:hover {
+        background: url(images/bg1.png) no-repeat;
+
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <a href="#" class="bg1">五彩导航</a>
+        <a href="#">五彩导航</a>
+        <a href="#">五彩导航</a>
+        <a href="#">五彩导航</a>
+        <a href="#">五彩导航</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.box{
+    border: 5px solid black;
+    border-radius: 10px;
+    background-image: url(070.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+}
+h2{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}

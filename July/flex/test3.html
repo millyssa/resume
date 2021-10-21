@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>flex弹性布局</title>
+    <style>
+        #div0 {
+            display: flex;
+            width: 400px;
+            height: 500px;
+            background-color: violet;
+        }
+
+        #div0 div {
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+            /* flex: 1 1 auto;自动扩展或缩小 */
+            /* flex: 0 0 auto;width生效 */
+            flex: 2 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div0">
+
+        <div>1</div>
+        <div>2</div>
+
+    </div>
+</body>
+
+</html>

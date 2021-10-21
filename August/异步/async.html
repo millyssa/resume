@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let hello = async function () { return "Hello" };
+        console.log(hello());
+        //async 关键字将函数转换为 promise
+
+        hello().then((value) => console.log(value));
+        //hello().then(console.log)
+
+
+    </script>
+</body>
+
+</html>
