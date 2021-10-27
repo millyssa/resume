@@ -1,9 +1,0 @@
-.box {
-  border: 1px solid #333333;
-  width: 200px;
-  height: 100px;
-  /* overflow: scroll; */
-  overflow: hidden;
-  /* overflow: visible; */
-  /* overflow: scroll hidden 会把 overflow-x 设置成 scroll，而 overflow-y则为 hidden。 */
-}
